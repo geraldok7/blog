@@ -1,10 +1,10 @@
-# Build a Blog with Next.js 14 and Sanity CMS - Repository from my YouTube tutorial
+# Construir um Blog com Next.js 14 e Sanity CMS - Repositório do meu tutorial no YouTube
 
-[![Video](https://github.com/stefandjikic/next-cms-blog/assets/65912958/2576b109-d592-4321-9870-0db29d769a3e)
+[![Vídeo](https://github.com/stefandjikic/next-cms-blog/assets/65912958/2576b109-d592-4321-9870-0db29d769a3e)
 ](https://www.youtube.com/watch?v=yAqgjSZ0PqY)
 
 
-## Technologies used
+## Tecnologias utilizadas
 
 - [Next.js](https://nextjs.org/)
 
@@ -13,48 +13,37 @@
 - [Sanity.io](https://www.sanity.io)
 
 
-## Getting Started
+## Primeiros Passos
 
-First, add your Sanity project ID and dataset name to the `.env.local` file:
-
-```bash
-NEXT_PUBLIC_SANITY_PROJECT_ID=your_project_id
-NEXT_PUBLIC_SANITY_DATASET=your_dataset_name
-```
-
-If you want to have comments system, you need to add your Sanity API token to the `.env.local` file:
+Primeiro, adicione o ID do seu projeto Sanity e o nome do dataset ao arquivo `.env.local`:
 
 ```bash
-NEXT_PUBLIC_SANITY_TOKEN=your_api_token
+NEXT_PUBLIC_SANITY_PROJECT_ID=seu_id_do_projeto
+NEXT_PUBLIC_SANITY_DATASET=seu_nome_do_dataset
 ```
 
-Then, install the dependencies:
-  
+Se você quiser ter um sistema de comentários, você precisa adicionar o token da API do Sanity ao arquivo `.env.local`:
+
+```bash
+NEXT_PUBLIC_SANITY_TOKEN=seu_token_da_api
+```
+
+Depois, instale as dependências e inicie o servidor de desenvolvimento:
+
 ```bash
 npm install
-# or
-yarn install
-# or
-pnpm install
-# or
-bun install
-```
-
-Run the development server:
-
-```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
+# ou
 pnpm dev
-# or
+# ou
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-Open [http://localhost:3000/studio](http://localhost:3000/studio) for sanity studio.
+Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
+Abra [http://localhost:3000/studio](http://localhost:3000/studio) para o Sanity Studio.
 
-## Deploy on Vercel
+## Deploy no Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+A maneira mais fácil de fazer o deploy da sua aplicação Next.js é usar a [Plataforma Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) dos criadores do Next.js.
